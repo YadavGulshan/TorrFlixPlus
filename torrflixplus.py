@@ -59,12 +59,6 @@ def stream(magnet,num = False):
 		subprocess.call(['webtorrent','--vlc','--select',num,magnet],shell=True)
 		return
 	subprocess.call(['webtorrent','--vlc',magnet],shell=True)
-	
-def show(magnet,num):
-	subprocess.call(['webtorrent','--vlc','--select',num,magnet],shell=True)
-def movie(magnet):
-    subprocess.call(['webtorrent','--vlc',magnet],shell=True)
-
 if __name__ == '__main__':
     quality = '720'
     hindi = False
