@@ -28,7 +28,7 @@ def search(movie_name,hindi,quality):
     print(f"Searching for {movie_name}")
 
     if hindi:
-       movie_name = movie_name + quality + ' hindi' 
+       movie_name = movie_name + ' hindi' 
     torrent_results = x1337.search(movie_name,quality)
     seeder = 0
     name = ''
@@ -58,11 +58,6 @@ def stream(magnet,num = True):
 	if num:
 		subprocess.call(['webtorrent','--vlc',magnet],shell=True)
 	subprocess.call(['webtorrent','--vlc','--select',num,magnet],shell=True)
-
-def show(magnet,num):
-	subprocess.call(['webtorrent','--vlc','--select',num,magnet],shell=True)
-def movie(magnet):
-    subprocess.call(['webtorrent','--vlc',magnet],shell=True)
 
 if __name__ == '__main__':
     quality = '720'
