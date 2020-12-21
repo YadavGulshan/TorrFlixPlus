@@ -1,6 +1,6 @@
 # TorrFlixPlus :movie_camera:
 A simple torrent streamer written in Python 3.
-#### Tested on Linux 64bit system with Python 3.8.2
+#### Tested on Windows 10 64bit system with Python 3.9.0
 
 ## Inspiration 😇
 * [TorrFlix](https://github.com/cyberboysumanjay/TorrFlix) 🤗
